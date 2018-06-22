@@ -6,3 +6,7 @@ roles/*
 *.iml
 gdsl
 *.retry
+
+# Ignore everything that isn't secret.j2
+params/secrets/*
+!params/secrets/secret.j2

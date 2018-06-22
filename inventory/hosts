@@ -9,3 +9,6 @@ app-build-deploy
 
 [ci-for-labs]
 ci-for-labs-ci-cd
+
+[secrets]
+deploy-keys

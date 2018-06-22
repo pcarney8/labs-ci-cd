@@ -48,6 +48,7 @@ There are multiple Ansible inventories which divide the type of components to be
 * `bootstrap` - Located in `inventory/host_vars/projects-and-policies.yml` contains a collection of objects used to create project namespaces and bind roles to groups for those namespace in OpenShift
 * `tools` -  Located in `inventory/host_vars/ci-cd-tooling.yml` contains the collection of Jenkins slaves, Jenkins S2I and other CI/CD tooling deployments such as SonarQube, Nexus and others.
 * `apps` - Located in `inventory/host_vars/app-build-deploy.yml` contains definitions for the Java reference app's build and deploy
+* `secrets` - Located in `inventory/host_vars/deploy-keys.yml` contains definitions for the Secrets/SSH keys
 
 
 ## Getting Started With Docker
@@ -59,6 +60,11 @@ There are two ways to use Labs CI/CD. The preferred approach is to run the playb
 * [Docker CE](https://www.docker.com/community-edition#/download)
 * [OpenShift CLI Tools](https://docs.openshift.com/container-platform/latest/cli_reference/get_started_cli.html)
 * Access to the OpenShift cluster (Your user needs permissions to deploy ProjectRequest objects)
+* Deploy Keys are created and uploaded to GitHub 
+  - `ssh-keygen -t rsa -b 4096 -C "computer@example.com"`
+  - Upload public key (ends in `.pub`) to a Repository -> Settings -> Deploy Keys
+  - Create ansible password file, then set environment variable `ANSIBLE_VAULT_PASSWORD_FILE=~/.yourpasswordfile.txt`
+  - Create encrypted string `cat ~/.ssh/example/spring | base64 -w 0 | ansible-vault encrypt_string --stdin-name 'spring_private_key' >> deploy-keys/keys.yml` 
 
 ### Usage
 
