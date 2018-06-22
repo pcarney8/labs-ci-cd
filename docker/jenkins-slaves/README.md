@@ -19,7 +19,7 @@ SOURCE_REPOSITORY_REF=v1.1
   - name: jenkins-slave-ansible
     template: "https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.1/jenkins-slaves/templates/jenkins-slave-generic-template.yml"
     params: "{{ playbook_dir }}/params/jenkins-slave-ansible/build"
-    namespace: "{{ ci_cd_namespace }}"
+    namespace: "{{ ci_cd.namespace }}"
     tags:
       - jenkins-slaves
       - ansible-slave

@@ -7,19 +7,19 @@ openshift_cluster_content:
   - name: jenkins-s2i
     template: "{{ playbook_dir }}/openshift-templates/jenkins-s2i-build/template.yml"
     params: "{{ playbook_dir }}/params/jenkins/build"
-    namespace: "{{ ci_cd_namespace }}"
+    namespace: "{{ ci_cd.namespace }}"
     tags:
     - jenkins
   - name: tool-box
     template: "{{ playbook_dir }}/openshift-templates/docker-build/template.yml"
     params: "{{ playbook_dir }}/params/tool-box/build"
-    namespace: "{{ ci_cd_namespace }}"
+    namespace: "{{ ci_cd.namespace }}"
     tags:
       - tool-box
   - name: hoverfly
     template: "{{ playbook_dir }}/openshift-templates/docker-build/template.yml"
     params: "{{ playbook_dir }}/params/hoverfly/build"
-    namespace: "{{ ci_cd_namespace }}"
+    namespace: "{{ ci_cd.namespace }}"
     tags:
       - hoverfly
 - object: jenkins-slave-nodes
@@ -27,56 +27,56 @@ openshift_cluster_content:
   - name: jenkins-slave-mvn
     template: "https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.1/jenkins-slaves/templates/jenkins-slave-generic-template.yml"
     params: "{{ playbook_dir }}/params/jenkins-slaves/mvn"
-    namespace: "{{ ci_cd_namespace }}"
+    namespace: "{{ ci_cd.namespace }}"
     tags:
     - jenkins-slaves
     - mvn-slave
   - name: jenkins-slave-npm
     template: "https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.1/jenkins-slaves/templates/jenkins-slave-generic-template.yml"
     params: "{{ playbook_dir }}/params/jenkins-slaves/npm"
-    namespace: "{{ ci_cd_namespace }}"
+    namespace: "{{ ci_cd.namespace }}"
     tags:
     - jenkins-slaves
     - npm-slave
   - name: jenkins-slave-zap
     template: "https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.1/jenkins-slaves/templates/jenkins-slave-generic-template.yml"
     params: "{{ playbook_dir }}/params/jenkins-slaves/zap"
-    namespace: "{{ ci_cd_namespace }}"
+    namespace: "{{ ci_cd.namespace }}"
     tags:
     - jenkins-slaves
     - zap-slave
   - name: jenkins-slave-ansible
     template: "https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.1/jenkins-slaves/templates/jenkins-slave-generic-template.yml"
     params: "{{ playbook_dir }}/params/jenkins-slaves/ansible"
-    namespace: "{{ ci_cd_namespace }}"
+    namespace: "{{ ci_cd.namespace }}"
     tags:
       - jenkins-slaves
       - ansible-slave
   - name: jenkins-slave-arachni
     template: "https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.1/jenkins-slaves/templates/jenkins-slave-generic-template.yml"
     params: "{{ playbook_dir }}/params/jenkins-slaves/arachni"
-    namespace: "{{ ci_cd_namespace }}"
+    namespace: "{{ ci_cd.namespace }}"
     tags:
       - jenkins-slaves
       - arachni-slave
   - name: jenkins-slave-gradle
     template: "https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.1/jenkins-slaves/templates/jenkins-slave-generic-template.yml"
     params: "{{ playbook_dir }}/params/jenkins-slaves/gradle"
-    namespace: "{{ ci_cd_namespace }}"
+    namespace: "{{ ci_cd.namespace }}"
     tags:
       - jenkins-slaves
       - gradle-slave
   - name: jenkins-slave-golang
     template: "https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.1/jenkins-slaves/templates/jenkins-slave-generic-template.yml"
     params: "{{ playbook_dir }}/params/jenkins-slaves/golang"
-    namespace: "{{ ci_cd_namespace }}"
+    namespace: "{{ ci_cd.namespace }}"
     tags:
       - jenkins-slaves
       - golang-slave
   - name: jenkins-slave-mongodb
     template: "https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.1/jenkins-slaves/templates/jenkins-slave-generic-template.yml"
     params: "{{ playbook_dir }}/params/jenkins-slaves/mongodb"
-    namespace: "{{ ci_cd_namespace }}"
+    namespace: "{{ ci_cd.namespace }}"
     tags:
       - jenkins-slaves
       - mongodb-slave
@@ -85,19 +85,19 @@ openshift_cluster_content:
   - name: sonarqube
     template: "{{ playbook_dir }}/openshift-templates/sonarqube/template.yml"
     params: "{{ playbook_dir }}/params/sonarqube/build-and-deploy"
-    namespace: "{{ ci_cd_namespace }}"
+    namespace: "{{ ci_cd.namespace }}"
     tags:
     - sonar
   - name: sonarqube-postgresql
     template: "openshift//postgresql-persistent"
     params: "{{ playbook_dir }}/params/sonarqube/postgresql"
-    namespace: "{{ ci_cd_namespace }}"
+    namespace: "{{ ci_cd.namespace }}"
     tags:
     - sonar
   - name: nexus
     template: "{{ playbook_dir }}/openshift-templates/nexus/template.yml"
     params: "{{ playbook_dir }}/params/nexus/deploy"
-    namespace: "{{ ci_cd_namespace }}"
+    namespace: "{{ ci_cd.namespace }}"
     tags:
     - nexus
     post_steps:
@@ -105,12 +105,12 @@ openshift_cluster_content:
   - name: jenkins-persistent
     template: "{{ playbook_dir }}/openshift-templates/jenkins/jenkins-persistent-template.yml"
     params: "{{ playbook_dir }}/params/jenkins/deploy"
-    namespace: "{{ ci_cd_namespace }}"
+    namespace: "{{ ci_cd.namespace }}"
     tags:
     - jenkins
   - name: hoverfly
     template: "{{ playbook_dir }}/openshift-templates/hoverfly/template.yml"
     params: "{{ playbook_dir }}/params/hoverfly/deploy"
-    namespace: "{{ ci_cd_namespace }}"
+    namespace: "{{ ci_cd.namespace }}"
     tags:
     - hoverfly

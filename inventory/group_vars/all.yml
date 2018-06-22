@@ -1,0 +1,7 @@
+---
+ci_cd:
+  namespace: labs-ci-cd
+dev:
+  namespace: labs-dev
+test:
+  namespace: labs-test
