@@ -1,0 +1,36 @@
+- https://raw.githubusercontent.com/rht-labs/openshift-templates/v1.0/jenkins-s2i-build/jenkins-s2i-build-template.yml
+- https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.4/build-docker-generic/.openshift/templates/docker-build-template.yml
+- https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.4/build-docker-generic/.openshift/templates/docker-build-template.yml
+- https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.4/build-docker-generic/.openshift/templates/docker-build-template.yml
+- https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.3/jenkins-slaves/templates/jenkins-slave-generic-template.yml
+- https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.3/jenkins-slaves/templates/jenkins-slave-generic-template.yml
+- https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.3/jenkins-slaves/templates/jenkins-slave-generic-template.yml
+- https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.3/jenkins-slaves/templates/jenkins-slave-generic-template.yml
+- https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.3/jenkins-slaves/templates/jenkins-slave-generic-template.yml
+- https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.3/jenkins-slaves/templates/jenkins-slave-generic-template.yml
+- https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.3/jenkins-slaves/templates/jenkins-slave-generic-template.yml
+- https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.3/jenkins-slaves/templates/jenkins-slave-generic-template.yml
+- https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.3/jenkins-slaves/templates/jenkins-slave-generic-template.yml
+- https://raw.githubusercontent.com/rht-labs/openshift-templates/v1.0/sonarqube/sonarqube-deployment-template.yml
+- https://raw.githubusercontent.com/rht-labs/openshift-templates/v1.0/nexus/nexus-deployment-template.yml
+- https://raw.githubusercontent.com/rht-labs/openshift-templates/v1.0/jenkins/jenkins-ephemeral-template.yml
+- https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.4/hoverfly/.openshift/templates/hoverfly-deployment-template.yml
+
+- https://raw.githubusercontent.com/rht-labs/openshift-templates/v1.0/jenkins-s2i-build/jenkins-s2i-build-template.yml
+- https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.4/build-docker-generic/.openshift/templates/docker-build-template.yml
+- https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.4/build-docker-generic/.openshift/templates/docker-build-template.yml
+- https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.4/build-docker-generic/.openshift/templates/docker-build-template.yml
+- https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.3/jenkins-slaves/templates/jenkins-slave-generic-template.yml
+- https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.3/jenkins-slaves/templates/jenkins-slave-generic-template.yml
+- https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.3/jenkins-slaves/templates/jenkins-slave-generic-template.yml
+- https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.3/jenkins-slaves/templates/jenkins-slave-generic-template.yml
+- https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.3/jenkins-slaves/templates/jenkins-slave-generic-template.yml
+- https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.3/jenkins-slaves/templates/jenkins-slave-generic-template.yml
+- https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.3/jenkins-slaves/templates/jenkins-slave-generic-template.yml
+- https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.3/jenkins-slaves/templates/jenkins-slave-generic-template.yml
+- https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.3/jenkins-slaves/templates/jenkins-slave-generic-template.yml
+- https://raw.githubusercontent.com/rht-labs/openshift-templates/v1.0/sonarqube/sonarqube-deployment-template.yml
+- https://raw.githubusercontent.com/rht-labs/openshift-templates/v1.0/nexus/nexus-deployment-template.yml
+- https://raw.githubusercontent.com/rht-labs/openshift-templates/v1.0/jenkins/jenkins-ephemeral-template.yml
+- https://raw.githubusercontent.com/redhat-cop/containers-quickstarts/v1.4/hoverfly/.openshift/templates/hoverfly-deployment-template.yml
+
